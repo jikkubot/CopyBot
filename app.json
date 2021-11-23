@@ -43,7 +43,7 @@
       "required": false
     },
     "SESSION": {
-      "description": "(Optional) Put this, only if you are using your user account. Generate your session string from here https://replit.com/@aahnik/tg-login. This is NOT required if you are using a bot account.",
+      "description": "(Optional) Put this, only if you are using your user account. Generate your session string from here https://replit.com/@JijinR/PyroSessionString . This is NOT required if you are using a bot account.",
       "value": "",
       "required": false
     }
