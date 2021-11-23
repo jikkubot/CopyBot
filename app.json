@@ -1,10 +1,10 @@
 {
-  "name": "tgcf",
+  "name": "copybot",
   "stack": "container",
-  "description": "The ultimate tool to automate telegram message forwarding. To learn more visit https://github.com/aahnik/tgcf/wiki/Deploy-to-Heroku",
+  "description": "The ultimate tool to automate telegram message forwarding. To learn more visit https://github.com/EL-Coders/CopyBot",
   "keywords": ["telegram", "forwarding", "automation"],
-  "website": "https://aahnik.dev",
-  "repository": "https://github.com/aahnik/tgcf",
+  "website": "https://github.com/EL-Coders/CopyBot",
+  "repository": "https://github.com/EL-Coders/CopyBot",
   "logo": "https://user-images.githubusercontent.com/66209958/115183360-3fa4d500-a0f9-11eb-9c0f-c5ed03a9ae17.png",
   "env": {
     "API_ID": {
@@ -17,13 +17,23 @@
       "value": "",
       "required": true
     },
-    "TGCF_MODE": {
-      "description": "The mode you want to run tgcf past/live. Default is live.",
-      "value": "live",
+    "CHANNEL": {
+      "description": "List of chat id's to forward messages from.",
+      "value": "",
       "required": true
     },
-    "TGCF_CONFIG": {
-      "description": "(Optional) Put the contents of tgcf.config.yml here.",
+    "TO_CHANNEL": {
+      "description": "List of chat id's to forward messages to.",
+      "value": "",
+      "required": false
+    },
+    "GROUP": {
+      "description": "List of chat id's to forward messages from.",
+      "value": "",
+      "required": true
+    },
+    "TO_GROUP": {
+      "description": "List of chat id's to forward messages to.",
       "value": "",
       "required": false
     },
@@ -32,7 +42,7 @@
       "value": "",
       "required": false
     },
-    "SESSION_STRING": {
+    "SESSION": {
       "description": "(Optional) Put this, only if you are using your user account. Generate your session string from here https://replit.com/@aahnik/tg-login. This is NOT required if you are using a bot account.",
       "value": "",
       "required": false
