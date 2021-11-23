@@ -25,12 +25,12 @@
     "TO_CHANNEL": {
       "description": "List of chat id's to forward messages to.",
       "value": "",
-      "required": false
+      "required": true
     },
     "GROUP": {
       "description": "List of chat id's to forward messages from.",
       "value": "",
-      "required": true
+      "required": false
     },
     "TO_GROUP": {
       "description": "List of chat id's to forward messages to.",
