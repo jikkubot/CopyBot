@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
-from PyroBot import CHANNEL, GROUP, TO_CHANNEL, TO_GROUP
+from CopyBot import CHANNEL, GROUP, TO_CHANNEL, TO_GROUP
 
 
 
@@ -39,7 +39,7 @@ async def channel_saver(client, message):
             file_groups.append(message.media_group_id)
 
         messages = await message.get_media_group()
-    for message in messages:
+        for message in messages:
             await copy_message(message, to_channel)
     else:
         await copy_message(message, to_channel)
